@@ -1,0 +1,39 @@
+name: Deploy Nuxt to GitHub Pages
+
+# Aquí le decimos: ejecútalo cada vez que haya un push en la rama main.
+on:
+  push:
+    branches:
+      - main   # tu rama principal
+
+# Define un job (trabajo) llamado deploy
+# se job se ejecutará en un servidor Linux de GitHub llamado ubuntu-latest
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+        # Primer paso: descargar el código de tu repo en ese servidor
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+        # Segundo paso: configurar Node.js, esto le dice al servidor qué versión de Node instalar
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22   # Versión de Node que usas en tu proyecto
+
+        # Instala todas las dependencias de tu proyecto
+      - name: Install dependencies
+        run: npm install
+
+        # Ejecuta npm run generate
+      - name: Generate static site
+        run: npm run generate
+
+        # Último paso: subir el contenido de .output/public
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3 # es una acción hecha por la comunidad para publicar sitios en GitHub Pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # es un token secreto que GitHub te da automáticamente para poder hacer el deploy
+          publish_dir: ./.output/public # carpeta que quieres subir. En el caso de Nuxt es .output/public
