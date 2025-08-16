@@ -1,0 +1,180 @@
+export default defineEventHandler(() => {
+    return [
+        {
+            id: 1,
+            title: 'Desarrollador Web',
+            company: 'OpenTIC (En Desarrollo)',
+            year: 2025,
+            skills: [
+                { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'VueJS', icon: 'mdi mdi-vuejs', color: '#4FC08D' },
+                { name: 'Froala Editor', icon: 'mdi mdi-file-edit', color: '#305132' },
+                { name: 'Git', icon: 'mdi mdi-git', color: '#F05032' },
+                { name: 'JWT', icon: null, color: '#000000' },
+                { name: null, icon: 'mdi mdi-api', color: '#000000' },
+            ],
+            uri: 'https://qa-sgdeadocuments.opentic.co/',
+            image: 'opentic.png',
+            alt: 'Imagen del proyecto Opentic'
+        },
+        {
+            id: 1,
+            title: 'Desarrollador Web ',
+            company: 'MistersWeb (En pruebas)',
+            year: 2024,
+            skills: [
+                { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'VueJS', icon: 'mdi mdi-vuejs', color: '#4FC08D' },
+                { name: 'Laravel', icon: 'mdi mdi-laravel', color: '#FF2D20' },
+                { name: 'Git', icon: 'mdi mdi-git', color: '#F05032' },
+                { name: 'MySQL', icon: 'mdi mdi-database', color: '#4479A1' },
+                { name: 'JWT', icon: null, color: '#000000' },
+                { name: 'Task Shedules', icon: null, color: '#000000' },
+            ],
+            uri: 'https://tulugar.com.pe/',
+            image: 'tulugar.png',
+            alt: 'Imagen del proyecto TuLugar'
+        },
+        {
+            id: 1,
+            title: 'Desarrollador Web (En pruebas)',
+            company: 'MistersWeb (En pruebas)',
+            year: 2024,
+            skills: [
+                { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'VueJS', icon: 'mdi mdi-vuejs', color: '#4FC08D' },
+                { name: 'Laravel', icon: 'mdi mdi-laravel', color: '#FF2D20' },
+                { name: 'Git', icon: 'mdi mdi-git', color: '#F05032' },
+                { name: 'MySQL', icon: 'mdi mdi-database', color: '#4479A1' },
+                { name: 'JWT', icon: null, color: '#000000' },
+                { name: 'Task Shedules', icon: null, color: '#000000' },
+            ],
+            uri: 'https://rocamiones.com/',
+            image: 'rocamiones.png',
+            alt: 'Imagen del proyecto Rocamiones'
+        },
+        {
+            id: 1,
+            title: 'Desarrollador Web',
+            company: 'Objetivo Virtual',
+            year: 2024,
+            skills: [
+                { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'VueJS', icon: 'mdi mdi-vuejs', color: '#4FC08D' },
+                { name: 'Laravel', icon: 'mdi mdi-laravel', color: '#FF2D20' },
+                { name: 'Git', icon: 'mdi mdi-git', color: '#F05032' },
+                { name: 'MySQL', icon: 'mdi mdi-database', color: '#4479A1' },
+                { name: 'JWT', icon: null, color: '#000000' },
+                { name: 'Task Shedules', icon: null, color: '#000000' },
+            ],
+            uri: 'https://objetivovirtual.com/sistema/',
+            image: 'ov.png',
+            alt: 'Imagen del proyecto Objetivo Virtual'
+        },
+        {
+            id: 1,
+            title: 'Desarrollador Web',
+            company: 'Objetivo Virtual',
+            year: 2024,
+            skills: [
+                { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'VueJS', icon: 'mdi mdi-vuejs', color: '#4FC08D' },
+                { name: 'Laravel', icon: 'mdi mdi-laravel', color: '#FF2D20' },
+                { name: 'Git', icon: 'mdi mdi-git', color: '#F05032' },
+                { name: 'MySQL', icon: 'mdi mdi-database', color: '#4479A1' },
+                { name: 'JWT', icon: null, color: '#000000' },
+            ],
+            uri: 'https://ombucatalogodigital.com.ar/',
+            image: 'ombu.png',
+            alt: 'Imagen del proyecto Ombu'
+        },
+        {
+            id: 1,
+            title: 'Desarrollador Web',
+            company: 'PersonalsDates',
+            year: 2024,
+            skills: [
+                { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'VueJS', icon: 'mdi mdi-vuejs', color: '#4FC08D' },
+                { name: 'Laravel', icon: 'mdi mdi-laravel', color: '#FF2D20' },
+                { name: 'Git', icon: 'mdi mdi-git', color: '#F05032' },
+                { name: 'MySQL', icon: 'mdi mdi-database', color: '#4479A1' },
+                { name: 'JWT', icon: null, color: '#000000' },
+            ],
+            uri: 'https://personalsdates.com/',
+            image: 'personalsdate.png',
+            alt: 'Imagen del proyecto PersonalsDates'
+        },
+        {
+            id: 1,
+            title: 'Desarrollador Web',
+            company: 'TouchClick',
+            year: 2024,
+            skills: [
+                { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'VueJS', icon: 'mdi mdi-vuejs', color: '#4FC08D' },
+                { name: 'Laravel', icon: 'mdi mdi-laravel', color: '#FF2D20' },
+                { name: 'Git', icon: 'mdi mdi-git', color: '#F05032' },
+                { name: 'MySQL', icon: 'mdi mdi-database', color: '#4479A1' },
+                { name: 'JWT', icon: null, color: '#000000' },
+            ],
+            uri: 'https://www.limatours.com.pe/',
+            image: 'limatours.png',
+            alt: 'Imagen del proyecto TouchClick'
+        },
+        {
+            id: 1,
+            title: 'Desarrollador Web',
+            company: 'Lustro EIRL',
+            year: 2021,
+            skills: [
+                { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'VueJS', icon: 'mdi mdi-vuejs', color: '#4FC08D' },
+                { name: 'Laravel', icon: 'mdi mdi-laravel', color: '#FF2D20' },
+                { name: 'Git', icon: 'mdi mdi-git', color: '#F05032' },
+                { name: 'MySQL', icon: 'mdi mdi-database', color: '#4479A1' },
+                { name: 'JWT', icon: null, color: '#000000' },
+                { name: null, icon: 'mdi mdi-api', color: '#000000' },
+            ],
+            uri: 'https://larebaja.pe/',
+            image: 'lustro.png',
+            alt: 'Imagen del proyecto Lustro EIRL'
+        },
+        {
+            id: 1,
+            title: 'Analista Desarrollador',
+            company: 'Sociedad Automotores Inka SAC',
+            year: 2018,
+            uri: null,
+            skills: [
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'Laravel', icon: 'mdi mdi-laravel', color: '#FF2D20' },
+                { name: 'SQLServer', icon: 'mdi mdi-database', color: '#4479A1' },
+            ],
+            image: 'saisac.png',
+            alt: 'Imagen del proyecto SAISAC'
+        },
+        {
+            id: 1,
+            title: 'Desarrolldor Web',
+            company: 'Colegio de Estadisticos del Perú',
+            year: 2018,
+            uri: 'https://coespela.org.pe/',
+            skills: [
+                { name: 'PHP', icon: 'mdi mdi-language-php', color: '#777BB4' },
+                { name: 'Laravel', icon: 'mdi mdi-laravel', color: '#FF2D20' },
+                { name: 'MySQL', icon: 'mdi mdi-database', color: '#4479A1' },
+            ],
+            image: 'coespe.png',
+            alt: 'Imagen del proyecto COESPE'
+        }
+    ]
+})

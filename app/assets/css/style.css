@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    font-family: 'Anton', cursive !important;
+    letter-spacing: 1px;
+}
+
+.typingEffect {
+    width: 0;
+    overflow: hidden;
+    border-right: 2px solid white;
+    font-size: 16px;
+    white-space: nowrap;
+    animation: typing 2s steps(30) forwards, blink 1s infinite;
+}
+
+/* The typing animation */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    45% {
+        border-color: transparent;
+    }
+
+    50%,
+    100% {
+        border-color: white;
+    }
+}
+
+
+.text-important-dark {
+    color: rgb(94 234 212/1);
+}
+
+.text-important-light {
+    color: rgb(var(--v-theme-primary));
+}
+
+.card-dark,
+.card-light {
+    position: relative;
+    display: flex;
+    flex-direction: column !important;
+    align-items: left !important;
+    justify-content: center;
+    border-radius: 15px;
+    transition: transform 2.8s ease, box-shadow 2.8s ease;
+}
+
+.card-dark::before,
+.card-dark::after,
+.card-light::before,
+.card-light::after {
+    position: absolute;
+    content: "";
+    display: flex;
+    flex-direction: column !important;
+    align-items: left !important;
+    justify-content: center;
+    background-color: rgba(173, 216, 230, 0.142);
+    transition: all 1.5s;
+}
+
+.card-dark::before,
+.card-light::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card-dark::after,
+.card-light::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+.card-dark:hover::before,
+.card-dark:hover:after,
+.card-light:hover::before,
+.card-light:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 100% 0 15px;
+    border-radius: 15px;
+    transition: all .7s;
+}
+
+.card-dark:hover {
+    color: rgb(94 234 212/1);
+    transition: transform 1.9s ease, box-shadow 1.9s ease;
+    box-shadow: rgba(38, 57, 77, 1) 0px 20px 30px -10px,
+        rgba(0, 0, 0, 1) 0px 10px 35px -5px;
+}
+
+.card-light:hover {
+    color: rgb(var(--v-theme-primary));
+    transition: transform 1.9s ease, box-shadow 1.9s ease;
+    box-shadow: rgba(14, 63, 126, 0.16) 0px 0px 0px 1px,
+        rgba(42, 51, 70, 0.13) 0px 1px 1px -0.5px,
+        rgba(42, 51, 70, 0.14) 0px 2px 2px -1px,
+        rgba(42, 51, 70, 0.14) 0px 3px 3px -1.5px,
+        rgba(42, 51, 70, 0.43) 0px 5px 5px -2.5px,
+        rgba(42, 51, 70, 0.33) 0px 10px 10px -5px,
+        rgba(42, 51, 70, 0.43) 0px 24px 24px -8px;
+}
+
+.wrap {
+    white-space: wrap;
+}
