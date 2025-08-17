@@ -35,11 +35,11 @@ onMounted(() => {
                 <code class="text-h5 my-4" :class="currentTheme == 'dark' ? 'bg-code-dark' : 'bg-code-light'">
                     <div>
                         <p class="typingEffect">
-                            <span class="console">
+                            <span class="text-info font-weight-bold">
                                 console
                             </span>
-                            <span class="log">.log</span>
-                            (<span class="text-primary">"Soy Desarrollador Web"</span> )
+                            <span class="text-indigo font-weight-bold">.log</span>
+                            (<span class="text-primary font-weight-bold">"Soy Desarrollador Web"</span> )
                         </p>
                     </div>
                 </code>
@@ -88,19 +88,6 @@ code {
     color: rgb(var(--v-theme-on-surface)) !important;
     background-color: rgb(var(--v-theme-surface)) !important;
 }
-
-.console {
-    color: rgb(var(--v-theme-info));
-    /* Verde tipo consola */
-    font-weight: 600;
-}
-
-.log {
-    color: rgb(var(--v-theme-primary));
-    /* Verde más suave */
-    font-weight: 500;
-}
-
 
 .profile {
     filter: drop-shadow(11px 12px 11px rgb(var(--v-theme-surface)))
