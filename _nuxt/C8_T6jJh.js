@@ -1,0 +1,1 @@
+import{ah as t,ao as r,B as s}from"./9CjF6kY9.js";const n=t("height",()=>{const{name:e}=r();return{height:s(()=>{switch(e.value){case"xs":return 220;case"sm":return 400;case"md":return 500;case"lg":return 600;case"xl":return 800;case"xxl":return 1200;default:return 0}})}},{persist:!0});export{n as u};
