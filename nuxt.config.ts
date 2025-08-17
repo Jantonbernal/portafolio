@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     }
   },
   app: {
+    baseURL: '/portafolio/',
     head: {
       title: 'Juan Manuel Antón Bernal',
       htmlAttrs: {
