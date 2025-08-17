@@ -1,14 +1,14 @@
 <script setup>
 useSeoMeta({
-  title: 'Cursos & Certificaciones | Juan Manuel Antón Bernal',
-  description: 'Cursos y certificaciones en Laravel, Vue.js, Nuxt y mejores prácticas de desarrollo web.',
-  ogTitle: 'Cursos y Certificaciones | Juan Manuel Antón Bernal',
-  ogDescription: 'Formación continua en el ecosistema Laravel + Vue + Nuxt.',
-  ogType: 'website',
-  ogUrl: 'https://jantonbernal.github.io/portfolio/#/courses',
-  twitterCard: 'summary_large_image',
-  robots: 'index,follow',
-  keywords: 'cursos, certificaciones, laravel, vue, nuxt, javascript, formación'
+    title: 'Cursos & Certificaciones | Juan Manuel Antón Bernal',
+    description: 'Cursos y certificaciones en Laravel, Vue.js, Nuxt y mejores prácticas de desarrollo web.',
+    ogTitle: 'Cursos y Certificaciones | Juan Manuel Antón Bernal',
+    ogDescription: 'Formación continua en el ecosistema Laravel + Vue + Nuxt.',
+    ogType: 'website',
+    ogUrl: 'https://jantonbernal.github.io/portfolio/#/courses',
+    twitterCard: 'summary_large_image',
+    robots: 'index,follow',
+    keywords: 'cursos, certificaciones, laravel, vue, nuxt, javascript, formación'
 })
 
 const useTheme = useThemeStore();
@@ -16,8 +16,11 @@ const { currentTheme } = storeToRefs(useTheme);
 
 const { data: courses } = await useFetch('/api/courses');
 
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
+
 const getImageUrl = (name) => {
-  return `/images/courses/${name}`
+    return `${baseURL}images/courses/${name}`
 }
 </script>
 

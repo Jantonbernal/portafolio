@@ -16,8 +16,11 @@ const { currentTheme } = storeToRefs(useTheme);
 
 const { data: systems } = await useFetch('/api/systems');
 
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
+
 const getImageUrl = (name) => {
-    return `/images/systems/${name}`
+    return `${baseURL}images/systems/${name}`
 }
 </script>
 

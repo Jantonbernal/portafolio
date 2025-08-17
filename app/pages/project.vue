@@ -12,8 +12,11 @@ const { currentTheme } = storeToRefs(useTheme);
 
 const { data: projects } = await useFetch('/api/projects');
 
+const config = useRuntimeConfig()
+const baseURL = config.app.baseURL
+
 const getImageUrl = (name) => {
-    return `/images/projects/${name}`
+    return `${baseURL}images/projects/${name}`
 }
 </script>
 
