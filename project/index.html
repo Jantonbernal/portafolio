@@ -1,0 +1,359 @@
+<!DOCTYPE html><html  lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Proyectos | Juan Manuel Antón Bernal - FullStack Developer</title><style id="vuetify-theme-stylesheet">:root {
+      color-scheme: dark;
+    }
+    :root {
+      --v-theme-background: 36,41,62;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 47,54,81;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 200,200,200;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 0,0,0;
+      --v-theme-primary: 96,180,120;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 50,129,193;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 251,151,125;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 137,157,173;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 75,208,139;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 248,192,118;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 0,0,0;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 0,0,0;
+      --v-theme-on-warning: 0,0,0;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 66, 66, 66;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 236,239,241;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 96,180,120;
+      --v-theme-primary-overlay-multiplier: 1;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 50,129,193;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 251,151,125;
+      --v-theme-error-overlay-multiplier: 1;
+      --v-theme-info: 137,157,173;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 75,208,139;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 248,192,118;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 0,0,0;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 0,0,0;
+      --v-theme-on-warning: 0,0,0;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 238, 238, 238;
+      --v-theme-on-kbd: 0, 0, 0;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 36,41,62;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 47,54,81;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 200,200,200;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 0,0,0;
+      --v-theme-primary: 96,180,120;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 50,129,193;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 251,151,125;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 137,157,173;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 75,208,139;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 248,192,118;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 0,0,0;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 0,0,0;
+      --v-theme-on-warning: 0,0,0;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 66, 66, 66;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background-color: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-bright {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-bright)) !important;
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .bg-surface-light {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-light-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-light)) !important;
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background-color: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background-color: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background-color: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background-color: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-bright {
+      color: rgb(var(--v-theme-surface-bright)) !important;
+    }
+    .border-surface-bright {
+      --v-border-color: var(--v-theme-surface-bright);
+    }
+    .text-surface-light {
+      color: rgb(var(--v-theme-surface-light)) !important;
+    }
+    .border-surface-light {
+      --v-border-color: var(--v-theme-surface-light);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-surface-bright {
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .on-surface-light {
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+</style><style>.page-enter-active,.page-leave-active{transition:all .4s}.page-enter-from,.page-leave-to{filter:blur(1rem);opacity:0}</style><style>.button[data-v-6d53e639]{background-color:transparent;border:none;font-family:sans-serif;font-size:13px!important;font-weight:700;padding:10px 30px 10px 11px;position:relative;transition:.1s;z-index:1}.button[data-v-6d53e639],.button[data-v-6d53e639]:hover{color:rgb(var(--v-theme-on-surface));text-align:center}.button[data-v-6d53e639]:hover:before{background-color:#75a5b823;border-radius:3px;height:40px;top:2px;transform:rotate(0);width:100%}.button[data-v-6d53e639]:before{border-radius:1px;content:"";height:6px;left:-10px;position:absolute;top:19px;transform:rotate(225deg);transition:.3s;width:6px;z-index:-1}.button[data-v-6d53e639]:active:before,.button[data-v-6d53e639]:before{background-color:#75a5b823}.switch[data-v-6d53e639]{-moz-appearance:none;appearance:none;-webkit-appearance:none;background-color:#043449;background-repeat:no-repeat;background-size:cover;border-radius:25px;cursor:pointer;height:40px;margin:0;outline:none;overflow:hidden;position:relative;transition:background-image .7s ease-in-out;width:110px}.switch[data-v-6d53e639]:checked{background-color:#00c3ff;background-size:cover;transition:background-image 1s ease-in-out}.switch[data-v-6d53e639]:after{animation:off-6d53e639 .7s cubic-bezier(.8,.5,.2,1.4) forwards;background-color:#fff;border-radius:50%;box-shadow:inset 5px -5px 4px #3535354d;content:"";height:35px;left:2px;position:absolute;top:2px;transform:translate(0);width:36px}@keyframes off-6d53e639{0%{transform:translate(80px);width:46px}50%{border-radius:25px;width:75px}to{transform:translate(0);width:36px}}.switch[data-v-6d53e639]:checked:after{animation:on-6d53e639 .7s cubic-bezier(.8,.5,.2,1.4) forwards;box-shadow:inset -5px -5px 4px #3535354d}@keyframes on-6d53e639{0%{transform:translate(0);width:46px}50%{border-radius:25px;width:75px}to{transform:translate(70px);width:36px}}.switch[data-v-6d53e639]:checked:before{animation:sun-6d53e639 .7s ease forwards;background-color:transparent;border-radius:50%;box-shadow:5px -1px #fff;content:"";filter:blur(0);height:15px;left:15px;position:absolute;top:5px;transform-origin:53px 10px;width:15px}@keyframes sun-6d53e639{0%{background-color:transparent;box-shadow:5px -1px #fff;filter:blur(0);transform:rotate(170deg)}50%{background-color:transparent;box-shadow:5px -1px #fff;filter:blur(0)}90%{background-color:#f5daaa;box-shadow:0 0 10px #f5deb4,0 0 20px #f5deb4,0 0 30px #f5deb4,inset 0 0 2px #efd3a3;filter:blur(1px)}to{background-color:#f5daaa;box-shadow:0 0 10px #f5deb4,0 0 20px #f5deb4,0 0 30px #f5deb4,inset 0 0 2px #efd3a3;filter:blur(1px);transform:rotate(0)}}.switch[data-v-6d53e639]:before{animation:moon-6d53e639 .7s ease forwards;background-color:#f5daaa;border-radius:50%;box-shadow:0 0 10px #f5deb4,0 0 20px #f5deb4,0 0 30px #f5deb4,inset 0 0 2px #efd3a3;content:"";filter:blur(1px);height:15px;left:1px;position:absolute;top:6px;transform-origin:53px 10px;width:15px}@keyframes moon-6d53e639{0%{filter:blur(1px);transform:rotate(0)}50%{filter:blur(1px)}90%{background-color:transparent;box-shadow:5px -1px #fff;filter:blur(0)}to{background-color:transparent;box-shadow:5px -1px #fff;filter:blur(0);transform:rotate(170deg)}}</style><style>.hamburger[data-v-d214534e]{cursor:pointer}.hamburger svg[data-v-d214534e]{height:3em;transition:transform .6s cubic-bezier(.4,0,.2,1)}.line[data-v-d214534e]{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3;transition:stroke-dasharray .6s cubic-bezier(.4,0,.2,1),stroke-dashoffset .6s cubic-bezier(.4,0,.2,1)}.line-top-bottom[data-v-d214534e]{stroke-dasharray:12 63}</style><style>.card[data-v-d3d61b02]{align-items:center;display:flex;justify-content:center;min-height:auto!important;overflow:hidden;perspective:1000px;position:relative;transition:all .9s cubic-bezier(.175,.885,.32,1.275)}.card img[data-v-d3d61b02],.card__content[data-v-d3d61b02]{transition:all .6s cubic-bezier(.175,.885,.32,1.275)}.card__content[data-v-d3d61b02]{left:0;opacity:0;position:absolute;top:0;transform:rotateX(-90deg);transform-origin:bottom;width:100%}.card:hover .card__content[data-v-d3d61b02]{opacity:1;transform:rotateX(0)}.card[data-v-d3d61b02]:hover{transform:scale(1.05)}.card:hover img[data-v-d3d61b02]{scale:0}</style><link rel="stylesheet" href="/portafolio/_nuxt/entry.DoCCI42K.css" crossorigin><link rel="stylesheet" href="/portafolio/_nuxt/default.DyJzGyN9.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/portafolio/project/_payload.json?a4814e5f-6e7e-46ee-8d45-7bcc98c09cac"><link rel="modulepreload" as="script" crossorigin href="/portafolio/_nuxt/DXvJaN2w.js"><link rel="modulepreload" as="script" crossorigin href="/portafolio/_nuxt/vMTHV4Vq.js"><link rel="modulepreload" as="script" crossorigin href="/portafolio/_nuxt/hGh6cEVu.js"><link rel="modulepreload" as="script" crossorigin href="/portafolio/_nuxt/D__q8uJB.js"><link rel="modulepreload" as="script" crossorigin href="/portafolio/_nuxt/H1Ng3_dh.js"><link rel="modulepreload" as="script" crossorigin href="/portafolio/_nuxt/Gmcy5Xol.js"><link rel="modulepreload" as="script" crossorigin href="/portafolio/_nuxt/CYHc0b0x.js"><link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/portafolio/_nuxt/builds/meta/a4814e5f-6e7e-46ee-8d45-7bcc98c09cac.json"><meta name="description" content="Mira mis proyectos desarrollados con Laravel, Vue.js, Nuxt y otras tecnologías modernas."><meta property="og:title" content="Proyectos de Juan Manuel Antón Bernal"><meta property="og:description" content="Explora mis proyectos FullStack, incluyendo migraciones desde Angular y desarrollos con Laravel + Vue.js."><meta property="og:image" content="https://jantonbernal.github.io/portfolio/projects-preview.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/x-icon" href="/favicon.ico"><script type="module" src="/portafolio/_nuxt/DXvJaN2w.js" crossorigin></script></head><body><div id="__nuxt"><div class="v-application v-theme--dark v-layout v-layout--full-height v-locale--is-ltr" style=""><div class="v-application__wrap"><!--[--><!--[--><nav class="v-navigation-drawer v-navigation-drawer--left v-navigation-drawer--floating v-navigation-drawer--temporary v-navigation-drawer--active v-theme--dark v-navigation-drawer--mobile pa-8" style="left:0;z-index:1004;transform:translateX(0px);position:fixed;transition:none !important;" data-v-6d53e639 app><!----><!----><div class="v-navigation-drawer__content"><!--[--><div class="d-flex flex-column align-center" data-v-6d53e639><input type="checkbox" name="checkbox" class="switch" data-v-6d53e639><!--[--><!--]--><div class="d-flex flex-row mt-16" data-v-6d53e639><!--[--><!--]--></div></div><!--]--></div><!----></nav><div class="v-navigation-drawer__scrim" style="z-index:1003;" data-v-6d53e639></div><!--]--><header class="v-toolbar v-toolbar--flat v-toolbar--floating v-toolbar--density-compact elevation-0 v-theme--dark v-locale--is-ltr v-app-bar bg-transparent" style="top:0;z-index:1004;transform:translateY(0%);position:fixed;transition:none !important;" app data-v-d214534e><!----><!--[--><div class="v-toolbar__content" style="height:48px;"><!----><!----><!--[--><div class="hamburger" data-v-d214534e><svg viewBox="0 0 32 32" data-v-d214534e><path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22" data-v-d214534e></path><path class="line" d="M7 16 27 16" data-v-d214534e></path></svg></div><!--]--><!----></div><!--]--><!--[--><!----><!--]--></header><main class="v-main" style="--v-layout-left:0px;--v-layout-right:0px;--v-layout-top:0px;--v-layout-bottom:0px;transition:none !important;"><!--[--><!--[--><div class="v-container v-container--fluid v-locale--is-ltr" style="" data-v-d3d61b02><!--[--><a class="v-card v-card--link v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" href="https://qa-sgdeadocuments.opentic.co/" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/opentic.png" class="align-end" width="100%" alt="Imagen del proyecto Opentic" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>OpenTIC (En Desarrollo)</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-javascript mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F7DF1E;caret-color:#F7DF1E;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Javascript</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-vuejs mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4FC08D;caret-color:#4FC08D;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>VueJS</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-file-edit mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#305132;caret-color:#305132;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Froala Editor</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-git mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F05032;caret-color:#F05032;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Git</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>JWT</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-api mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#000000;caret-color:#000000;" aria-hidden="true" data-v-d3d61b02></i><!----><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><span class="v-card__overlay"></span><span class="v-card__underlay"></span><!--]--></a><a class="v-card v-card--link v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" href="https://tulugar.com.pe/" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/tulugar.png" class="align-end" width="100%" alt="Imagen del proyecto TuLugar" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>MistersWeb (En pruebas)</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-javascript mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F7DF1E;caret-color:#F7DF1E;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Javascript</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-vuejs mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4FC08D;caret-color:#4FC08D;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>VueJS</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-laravel mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#FF2D20;caret-color:#FF2D20;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Laravel</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-git mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F05032;caret-color:#F05032;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Git</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-database mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4479A1;caret-color:#4479A1;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>MySQL</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>JWT</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>Task Shedules</p><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><span class="v-card__overlay"></span><span class="v-card__underlay"></span><!--]--></a><a class="v-card v-card--link v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" href="https://rocamiones.com/" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/rocamiones.png" class="align-end" width="100%" alt="Imagen del proyecto Rocamiones" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>MistersWeb (En pruebas)</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-javascript mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F7DF1E;caret-color:#F7DF1E;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Javascript</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-vuejs mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4FC08D;caret-color:#4FC08D;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>VueJS</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-laravel mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#FF2D20;caret-color:#FF2D20;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Laravel</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-git mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F05032;caret-color:#F05032;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Git</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-database mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4479A1;caret-color:#4479A1;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>MySQL</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>JWT</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>Task Shedules</p><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><span class="v-card__overlay"></span><span class="v-card__underlay"></span><!--]--></a><a class="v-card v-card--link v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" href="https://objetivovirtual.com/sistema/" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/ov.png" class="align-end" width="100%" alt="Imagen del proyecto Objetivo Virtual" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>Objetivo Virtual</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-javascript mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F7DF1E;caret-color:#F7DF1E;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Javascript</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-vuejs mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4FC08D;caret-color:#4FC08D;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>VueJS</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-laravel mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#FF2D20;caret-color:#FF2D20;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Laravel</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-git mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F05032;caret-color:#F05032;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Git</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-database mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4479A1;caret-color:#4479A1;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>MySQL</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>JWT</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>Task Shedules</p><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><span class="v-card__overlay"></span><span class="v-card__underlay"></span><!--]--></a><a class="v-card v-card--link v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" href="https://ombucatalogodigital.com.ar/" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/ombu.png" class="align-end" width="100%" alt="Imagen del proyecto Ombu" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>Objetivo Virtual</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-javascript mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F7DF1E;caret-color:#F7DF1E;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Javascript</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-vuejs mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4FC08D;caret-color:#4FC08D;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>VueJS</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-laravel mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#FF2D20;caret-color:#FF2D20;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Laravel</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-git mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F05032;caret-color:#F05032;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Git</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-database mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4479A1;caret-color:#4479A1;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>MySQL</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>JWT</p><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><span class="v-card__overlay"></span><span class="v-card__underlay"></span><!--]--></a><a class="v-card v-card--link v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" href="https://personalsdates.com/" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/personalsdate.png" class="align-end" width="100%" alt="Imagen del proyecto PersonalsDates" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>PersonalsDates</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-javascript mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F7DF1E;caret-color:#F7DF1E;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Javascript</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-vuejs mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4FC08D;caret-color:#4FC08D;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>VueJS</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-laravel mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#FF2D20;caret-color:#FF2D20;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Laravel</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-git mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F05032;caret-color:#F05032;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Git</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-database mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4479A1;caret-color:#4479A1;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>MySQL</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>JWT</p><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><span class="v-card__overlay"></span><span class="v-card__underlay"></span><!--]--></a><a class="v-card v-card--link v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" href="https://www.limatours.com.pe/" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/limatours.png" class="align-end" width="100%" alt="Imagen del proyecto TouchClick" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>TouchClick</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-javascript mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F7DF1E;caret-color:#F7DF1E;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Javascript</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-vuejs mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4FC08D;caret-color:#4FC08D;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>VueJS</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-laravel mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#FF2D20;caret-color:#FF2D20;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Laravel</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-git mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F05032;caret-color:#F05032;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Git</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-database mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4479A1;caret-color:#4479A1;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>MySQL</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>JWT</p><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><span class="v-card__overlay"></span><span class="v-card__underlay"></span><!--]--></a><a class="v-card v-card--link v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" href="https://larebaja.pe/" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/lustro.png" class="align-end" width="100%" alt="Imagen del proyecto Lustro EIRL" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>Lustro EIRL</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-javascript mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F7DF1E;caret-color:#F7DF1E;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Javascript</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-vuejs mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4FC08D;caret-color:#4FC08D;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>VueJS</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-laravel mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#FF2D20;caret-color:#FF2D20;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Laravel</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-git mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#F05032;caret-color:#F05032;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Git</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-database mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4479A1;caret-color:#4479A1;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>MySQL</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><!----><p data-v-d3d61b02>JWT</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-api mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#000000;caret-color:#000000;" aria-hidden="true" data-v-d3d61b02></i><!----><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><span class="v-card__overlay"></span><span class="v-card__underlay"></span><!--]--></a><div class="v-card v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/saisac.png" class="align-end" width="100%" alt="Imagen del proyecto SAISAC" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>Sociedad Automotores Inka SAC</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-laravel mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#FF2D20;caret-color:#FF2D20;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Laravel</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-database mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4479A1;caret-color:#4479A1;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>SQLServer</p><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div><a class="v-card v-card--link v-theme--dark v-card--density-default v-card--variant-plain mx-auto mb-7 card text-important-dark" style="max-width:450px;min-height:350px;" href="https://coespela.org.pe/" target="_blank" data-v-d3d61b02><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><img src="/images/projects/coespe.png" class="align-end" width="100%" alt="Imagen del proyecto COESPE" loading="lazy" cover data-v-d3d61b02><div class="card__content" data-v-d3d61b02><div class="v-card-title" style="" data-v-d3d61b02>Colegio de Estadisticos del Perú</div><div class="px-4 mb-2" data-v-d3d61b02><!--[--><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-language-php mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#777BB4;caret-color:#777BB4;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>PHP</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-laravel mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#FF2D20;caret-color:#FF2D20;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>Laravel</p><!--]--></div><!----><!----></span><span class="v-chip v-chip--label v-theme--dark v-chip--density-default v-chip--size-default v-chip--variant-tonal primary ma-2" style="" draggable="false" data-v-d3d61b02><!--[--><!----><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[--><i class="mdi mdi-database mdi v-icon notranslate v-theme--dark v-icon--size-default v-icon--start" style="color:#4479A1;caret-color:#4479A1;" aria-hidden="true" data-v-d3d61b02></i><p data-v-d3d61b02>MySQL</p><!--]--></div><!----><!----></span><!--]--></div></div><!--]--><!----><!--[--><span class="v-card__overlay"></span><span class="v-card__underlay"></span><!--]--></a><!--]--></div><!--]--><!--]--></main><!--]--></div></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/portafolio/project/_payload.json?a4814e5f-6e7e-46ee-8d45-7bcc98c09cac">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"pinia":8,"prerenderedAt":16},["Reactive",2],{},["Set"],["ShallowReactive",5],{"$f6jBxCmOSDuIe5PqdCwmBo8uzlUM4mSBbMF3suew-q2Q":-1},true,"/project",{"height":9,"menu":10,"theme":15},{},{"drawer":11,"menus":12},["Ref",6],["Ref",13],["Reactive",14],[],{},1755405365630]</script><script>window.__NUXT__={};window.__NUXT__.config={public:{piniaPluginPersistedstate:{}},app:{baseURL:"/portafolio/",buildId:"a4814e5f-6e7e-46ee-8d45-7bcc98c09cac",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
