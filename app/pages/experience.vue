@@ -5,10 +5,11 @@ useSeoMeta({
     ogTitle: 'Experiencia | Juan Manuel Antón Bernal',
     ogDescription: 'Trayectoria en Laravel, Vue.js, Nuxt y liderazgo técnico.',
     ogType: 'website',
-    ogUrl: 'https://jantonbernal.github.io/portfolio/#/experience',
+    ogUrl: 'https://jantonbernal.github.io/portafolio/experience',
+    ogImage: 'https://jantonbernal.github.io/portafolio/preview.jpg',
     twitterCard: 'summary_large_image',
     robots: 'index,follow',
-    keywords: 'experiencia, fullstack, laravel, vue, nuxt, ui ux, liderazgo técnico'
+    keywords: 'inicio, fullstack, laravel, vue, nuxt, ui ux, jwt, web developer, liderazgo técnico'
 })
 
 const useTheme = useThemeStore();

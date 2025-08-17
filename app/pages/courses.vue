@@ -5,10 +5,11 @@ useSeoMeta({
     ogTitle: 'Cursos y Certificaciones | Juan Manuel Antón Bernal',
     ogDescription: 'Formación continua en el ecosistema Laravel + Vue + Nuxt.',
     ogType: 'website',
-    ogUrl: 'https://jantonbernal.github.io/portfolio/#/courses',
+    ogUrl: 'https://jantonbernal.github.io/portafolio/courses',
+    ogImage: 'https://jantonbernal.github.io/portafolio/preview.jpg',
     twitterCard: 'summary_large_image',
     robots: 'index,follow',
-    keywords: 'cursos, certificaciones, laravel, vue, nuxt, javascript, formación'
+    keywords: 'cursos, laravel, vue, nuxt, javascript, formación'
 })
 
 const useTheme = useThemeStore();

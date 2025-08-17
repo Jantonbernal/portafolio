@@ -4,7 +4,12 @@ useSeoMeta({
     description: 'Mira mis proyectos desarrollados con Laravel, Vue.js, Nuxt y otras tecnologías modernas.',
     ogTitle: 'Proyectos de Juan Manuel Antón Bernal',
     ogDescription: 'Explora mis proyectos FullStack, incluyendo migraciones desde Angular y desarrollos con Laravel + Vue.js.',
-    ogImage: 'https://jantonbernal.github.io/portfolio/projects-preview.jpg',
+    ogType: 'website',
+    ogUrl: 'https://jantonbernal.github.io/portafolio/project',
+    ogImage: 'https://jantonbernal.github.io/portafolio/preview.jpg',
+    twitterCard: 'summary_large_image',
+    robots: 'index,follow',
+    keywords: 'inicio, fullstack, laravel, vue, nuxt, ui ux, jwt, web developer, liderazgo técnico'
 })
 
 const useTheme = useThemeStore();

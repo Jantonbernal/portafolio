@@ -5,7 +5,8 @@ useSeoMeta({
     ogTitle: 'Stack & Sistema | Juan Manuel Antón Bernal',
     ogDescription: 'Mi stack: Laravel + Vue/Nuxt, prácticas modernas y arquitectura limpia.',
     ogType: 'website',
-    ogUrl: 'https://jantonbernal.github.io/portfolio/#/system',
+    ogUrl: 'https://jantonbernal.github.io/portafolio/system',
+    ogImage: 'https://jantonbernal.github.io/portafolio/preview.jpg',
     twitterCard: 'summary_large_image',
     robots: 'index,follow',
     keywords: 'stack, arquitectura, laravel, vue, nuxt, pinia, vuetify, jwt, websockets, mercado pago'

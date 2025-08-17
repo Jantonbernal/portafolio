@@ -4,7 +4,12 @@ useSeoMeta({
     description: 'Soy Juan Manuel Antón Bernal, desarrollador FullStack especializado en Laravel y Vue.js. Experiencia liderando proyectos, migraciones y enfocándome en UI/UX.',
     ogTitle: 'Sobre mí | Juan Manuel Antón Bernal',
     ogDescription: 'Conoce más sobre mi experiencia como FullStack Developer en Laravel, Vue.js y Nuxt.',
-    ogImage: 'https://jantonbernal.github.io/portfolio/preview.jpg',
+    ogType: 'website',
+    ogUrl: 'https://jantonbernal.github.io/portafolio',
+    ogImage: 'https://jantonbernal.github.io/portafolio/preview.jpg',
+    twitterCard: 'summary_large_image',
+    robots: 'index,follow',
+    keywords: 'inicio, fullstack, laravel, vue, nuxt, ui ux, jwt, web developer, liderazgo técnico'
 })
 
 const heightStore = useHeightStore()

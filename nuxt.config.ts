@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         lang: 'es',
       },
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/portafolio/favicon.ico' },
       ],
       meta: [
         {
