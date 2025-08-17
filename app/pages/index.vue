@@ -101,10 +101,6 @@ code {
     font-weight: 500;
 }
 
-.text-primary {
-    color: rgb(var(--v-theme-primary));
-    font-weight: 600;
-}
 
 .profile {
     filter: drop-shadow(11px 12px 11px rgb(var(--v-theme-surface)))
