@@ -14,7 +14,7 @@ export default defineEventHandler(() => {
                 { name: 'JWT', icon: null, color: '#000000' },
                 { name: null, icon: 'mdi mdi-api', color: '#000000' },
             ],
-            uri: 'https://qa-sgdeadocuments.opentic.co/',
+            uri: 'https://umng-pruebas.opentic.co/nuevo/login.php',
             image: 'opentic.png',
             alt: 'Imagen del proyecto Opentic'
         },

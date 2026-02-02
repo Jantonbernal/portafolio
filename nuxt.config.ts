@@ -51,6 +51,12 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+  // permite pasar configuraciones dinámicas y variables de entorno al contexto de la aplicación Nuxt
+  runtimeConfig: {
+    public: {
+       baseURL: process.env.NUXT_PUBLIC_BASE_URL
+    }
+  },
   build: {
     transpile: ['vuetify'],
   },
