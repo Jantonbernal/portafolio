@@ -28,7 +28,7 @@ const getImageUrl = (name) => {
 <template>
     <v-container fluid>
         <v-card v-for="(item, index) in projects" class="mx-auto mb-7 card"
-            :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'" variant="plain"
+            :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'" variant="text"
             max-width="450" min-height="350" :href="item.uri" target="_blank">
             <img :src="getImageUrl(item.image)" class="align-end" width="100%" :alt="item.alt" loading="lazy" cover>
             </img>
