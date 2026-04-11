@@ -22,20 +22,20 @@ const { data: experiences } = await useFetch('/api/experiences');
 <template>
     <v-container fluid>
         <v-card v-for="(item, index) in experiences" :key="index" class="mx-auto mb-15"
-            :class="currentTheme == 'dark' ? 'card-dark' : 'card-light'" max-width="550" variant="plain">
+            :class="currentTheme == 'dark' ? 'card-dark' : 'card-light'" max-width="550" variant="text">
             <v-card-item>
-                <v-card-title>
+                <v-card-title class="font-weight-black">
                     {{ item.title }}
                 </v-card-title>
 
-                <v-card-subtitle>
+                <v-card-subtitle class="font-weight-black">
                     <span class="me-1">
                         {{ item.company }}
                     </span>
                 </v-card-subtitle>
             </v-card-item>
 
-            <v-card-text>
+            <v-card-text class="font-weight-semibold">
                 <div class="text-subtitle-1">
                     {{ item.country }} | {{ item.from }} - {{ item.to }}
                 </div>
@@ -45,7 +45,7 @@ const { data: experiences } = await useFetch('/api/experiences');
             </v-card-text>
 
             <div class="px-4 mb-2">
-                <v-chip label :class="currentTheme == 'dark' ? 'primary' : 'info'" class="ma-2"
+                <v-chip label :class="currentTheme == 'dark' ? 'primary' : 'info'" class="ma-2 font-weight-black"
                     v-for="(skill, x) in item.skills" :key="x" :color="!skill.icon ? skill.color : ''">
                     <v-icon v-if="skill.icon" :icon="skill.icon" :color="skill.color"
                         :size="!skill.name ? 'large' : 'default'" start>
