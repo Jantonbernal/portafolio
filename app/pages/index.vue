@@ -48,21 +48,39 @@ onMounted(() => {
                         </p>
                     </div>
                 </code>
-                <p class="mt-10 description">
-                    Soy Desarrollador Web, dedicado al desarrollo y enseñanza de tecnologías web, mayormente
-                    Javascript
-                    con <span :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'"> VueJS
-                    </span> y PHP con
-                    <span :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'"> Laravel.
-                    </span>
-                    Con mas de 7 años de experiencia en desarrollo web profesional y múltiples proyectos web con Laravel
-                    y VueJS,
-                    estos proyectos los puedes observar en la sección
-                    <span :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">
-                        <v-btn variant="plain" size="small" density="compact" :to="{ name: 'project' }">
-                            proyectos.
-                        </v-btn>
-                    </span>
+                <p class="mt-5">
+                    Soy
+                    <strong :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">
+                        Desarrollador
+                        FullStack Senior e Instructor Tecnológico
+                    </strong>
+                    con más de 7 años de
+                    trayectoria.
+                    Mi especialidad es el ecosistema de
+                    <span :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">Vue 3</span>,
+                    dominando desde la Composition API hasta arquitecturas complejas de SPAs y NuxtJS.
+                </p>
+
+                <p class="mt-3">
+                    En el backend, potencio aplicaciones con
+                    <span
+                        :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">Laravel</span>,
+                    implementando experiencias en tiempo real con
+                    <strong :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">
+                        Reverb
+                    </strong>,
+                    soluciones de
+                    <strong :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">IA</strong>
+                    y automatización avanzada mediante
+                    <strong :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">
+                        Jobs y Task Scheduling
+                    </strong>.
+                    He volcado esta experiencia en la creación de múltiples
+                    <v-btn variant="plain" size="small"  :to="{ name: 'project' }" class="pa-0"
+                        :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">
+                        proyectos
+                    </v-btn>
+                    profesionales y formación de nuevos talentos.
                 </p>
             </v-col>
             <v-col cols="12" md="6" class="d-flex justify-center align-center align-self-center">

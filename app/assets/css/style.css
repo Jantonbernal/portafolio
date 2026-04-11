@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
 body {
-    font-family: 'Anton', cursive !important;
     letter-spacing: 1px;
 }
 
@@ -40,7 +37,7 @@ body {
 
 
 .text-important-dark {
-    color: rgb(94 234 212/1);
+    color: rgb(var(--v-theme-primary));
 }
 
 .text-important-light {
