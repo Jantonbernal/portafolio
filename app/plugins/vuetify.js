@@ -26,7 +26,7 @@ export default defineNuxtPlugin((app) => {
                     dark: false,
                     colors: {
                         background: '#e6e9ef',       // Base
-                        surface: '#e6e9ef',          // Mantle
+                        surface: '#eceef3',          // Mantle
                         'surface-bright': '#dce0e8', // Crust
                         'surface-light': '#ccd0da',  // Surface 0
                         'surface-variant': '#bcc0cc', // Surface 1
