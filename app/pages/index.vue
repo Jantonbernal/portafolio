@@ -57,14 +57,16 @@ onMounted(() => {
                     con más de 7 años de
                     trayectoria.
                     Mi especialidad es el ecosistema de
-                    <span :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">Vue 3</span>,
+                    <strong :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">Vue
+                        3</strong>,
                     dominando desde la Composition API hasta arquitecturas complejas de SPAs y NuxtJS.
                 </p>
 
                 <p class="mt-3">
                     En el backend, potencio aplicaciones con
-                    <span
-                        :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">Laravel</span>,
+                    <strong :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">
+                        Laravel
+                    </strong>,
                     implementando experiencias en tiempo real con
                     <strong :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">
                         Reverb
@@ -76,7 +78,7 @@ onMounted(() => {
                         Jobs y Task Scheduling
                     </strong>.
                     He volcado esta experiencia en la creación de múltiples
-                    <v-btn variant="plain" size="small"  :to="{ name: 'project' }" class="pa-0"
+                    <v-btn variant="plain" size="small" :to="{ name: 'project' }" class="pa-0"
                         :class="currentTheme == 'dark' ? 'text-important-dark' : 'text-important-light'">
                         proyectos
                     </v-btn>
