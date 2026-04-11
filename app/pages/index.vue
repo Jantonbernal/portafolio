@@ -115,6 +115,7 @@ code {
 }
 
 .profile {
-    filter: drop-shadow(11px 12px 11px rgb(var(--v-theme-surface)))
+    filter: drop-shadow(11px 12px 11px rgb(var(--v-theme-surface)));
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 </style>
