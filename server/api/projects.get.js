@@ -15,6 +15,7 @@ export default defineEventHandler(() => {
                 { name: 'JWT', icon: 'mdi mdi-shield-key', color: '#000000' },
                 { name: 'Task Shedules', icon: 'mdi mdi-calendar-check', color: '#000000' },
             ],
+            uri: 'https://counter-admin.netlify.app/',
             image: 'sgi-tours.png',
             alt: 'Imagen del proyecto SGC-Tours'
         },
