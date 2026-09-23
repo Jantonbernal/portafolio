@@ -3,10 +3,10 @@ export default defineEventHandler(() => {
         {
             id: 1,
             title: 'Desarrollador Web',
-            company: 'MistersWeb',
+            company: 'OrusGroup',
             country: 'Perú',
-            from: '2026 ENE',
-            to: 'ACTUAL',
+            from: '2026 MARZO',
+            to: '2026 AGOSTO',
             description: 'Actualmente estoy desarrollando la aplicación web del Sistema de Gestión Interno de Tours enfocado en la venta de boletos aereos, tours, alquiler de equipamiento y unidades vehiculares, Este panel permite la gestión integral comisiones por counter y línea de negocio, roles y permisos, tipo de cambio diario, proveedores, alimentos, equipamientos, etc',
             skills: [
                 { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
@@ -25,7 +25,7 @@ export default defineEventHandler(() => {
             company: 'Opentic SAC',
             country: 'Colombia',
             from: '2025 DIC',
-            to: 'ACTUAL',
+            to: '2026 - JUNIO',
             description: 'Actualmente me encuentro a cargo de la migración del sitio web, desarrollado previamente en HTML Y PHP 5 hacia HTML + Vue.js 3 y PHP 8. Durante este proceso, también estoy enfocándome en la mejora de la interfaz y experiencia de usuario (UI/UX). El sistema corresponde a un SGDEA (Sistema de Gestión Documental Electrónica Administrativa), utilizado por diversas entidades del Estado. Este sistema permite la gestión de documentos, incluyendo su creación, edición y eliminación. Además, cuenta con un módulo de firma electrónica que facilita la validación de documentos mediante el uso de certificados digitales.',
             skills: [
                 { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
@@ -57,8 +57,8 @@ export default defineEventHandler(() => {
             title: 'Desarrollador Web',
             company: 'MistersWeb',
             country: 'Perú',
-            from: '2024 AGO',
-            to: '2024 NOV',
+            from: '2024 JUN',
+            to: '2025 AGOSTO',
             description: 'Diseñé y desarrollé un sitio web de suscripciones enfocado en la publicación de inmuebles (Tipo adondevivir), complementado con un panel de administración empresarial. Este panel permite la gestión integral del sitio, incluyendo funciones como la personalización del logotipo, la administración de tipos de viviendas, sub tipo, redes sociales etc, y la configuración de planes de suscripción, entre otras herramientas.',
             skills: [
                 { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
@@ -77,7 +77,7 @@ export default defineEventHandler(() => {
             title: 'Desarrollador Web',
             company: 'MistersWeb',
             country: 'Perú',
-            from: '2024 AGO',
+            from: '2024 JUN',
             to: '2024 NOV',
             description: 'Diseñé y desarrollé un sitio web de suscripciones enfocado en la publicación de vehículos, complementado con un panel de administración empresarial. Este panel permite la gestión integral del sitio, incluyendo funciones como la personalización del logotipo, la administración de marcas, modelos, años de fabricación, versiones, y la configuración de planes de suscripción, entre otras herramientas.',
             skills: [
@@ -97,8 +97,8 @@ export default defineEventHandler(() => {
             title: 'Desarrollador Web',
             company: 'Objetio Virtual',
             country: 'Argentina',
-            from: '2024 AGO',
-            to: '2024 SEP',
+            from: '2024 JUN',
+            to: '2024 OCTUBRE',
             description: 'Desarrollé un panel de administración empresarial que centraliza y optimiza las operaciones clave de la empresa. Este sistema permite llevar un control detallado de ingresos y egresos, gestionar cotizaciones y proyectos, emitir comprobantes, registrar pagos, y generar reportes completos para la toma de decisiones estratégicas',
             skills: [
                 { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },

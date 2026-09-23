@@ -3,7 +3,7 @@ export default defineEventHandler(() => {
         {
             id: 1,
             title: 'Desarrollador Web',
-            company: 'MistersWeb (En Desarrollo)',
+            company: 'Orus Group',
             year: 2026,
             skills: [
                 { name: 'Javascript', icon: 'mdi mdi-language-javascript', color: '#F7DF1E' },
@@ -15,7 +15,7 @@ export default defineEventHandler(() => {
                 { name: 'JWT', icon: 'mdi mdi-shield-key', color: '#000000' },
                 { name: 'Task Shedules', icon: 'mdi mdi-calendar-check', color: '#000000' },
             ],
-            uri: 'https://counter-admin.netlify.app/',
+            uri: 'https://tours.corneliosa.com/',
             image: 'sgi-tours.png',
             alt: 'Imagen del proyecto SGC-Tours'
         },
